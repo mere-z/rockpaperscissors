@@ -70,3 +70,5 @@ else {
 }
 
 console.log(result);
+console.log(`Player ended up with ${playerPoints} wins!`);
+console.log(`Computer ended up with ${computerPoints} wins!`)
