@@ -31,7 +31,7 @@ function playRockPaperScissors(playerSelection, computerSelection) {
     }
 }
 
-let playerSelection = window.prompt("Rock, paper or scissors?");
+let playerSelection;
 let computerSelection;
 
 let round = 0;
@@ -39,6 +39,7 @@ let playerPoints = 0;
 let computerPoints = 0;
 function game() {
     computerSelection = computerPlay();
+    playerSelection = window.prompt("Rock, paper or scissors?");
     console.log(playRockPaperScissors(playerSelection, computerSelection));
     if (playRockPaperScissors(playerSelection, computerSelection).includes("lose")) {
 
