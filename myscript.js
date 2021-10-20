@@ -1,7 +1,7 @@
 function computerPlay() {
     const actions = ["rock", "paper", "scissors"];
-    let computerSelection = actions[Math.floor(Math.random() * actions.length)];
-    return(computerSelection);
+    let action = actions[Math.floor(Math.random() * actions.length)];
+    return(action);
 }
 
 function playRockPaperScissors(playerSelection, computerSelection) {
@@ -32,18 +32,19 @@ function playRockPaperScissors(playerSelection, computerSelection) {
 }
 
 let playerSelection = window.prompt("Rock, paper or scissors?");
+let computerSelection = computerPlay();
 
 let round = 0;
 let playerPoints = 0;
 let computerPoints = 0;
 while (round < 5) {
     function game() {
-        if (playRockPaperScissors().includes("lose")) {
+        if (playRockPaperScissors(playerSelection, computerSelection).includes("lose")) {
 
             computerPoints += 1;
             return;
         }
-        else if (playRockPaperScissors().includes("win")) {
+        else if (playRockPaperScissors(playerSelection, computerSelection).includes("win")) {
             playerPoints += 1;
             return;
         }
