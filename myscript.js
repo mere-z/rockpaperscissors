@@ -10,28 +10,28 @@ function playRockPaperScissors(playerSelection, computerSelection) {
     }
     else if (playerSelection.toLowerCase() === "rock") {
         if (computerSelection === "scissors") {
-            return(`You win! ${playerSelection} beats ${computerSelection}`);
+            return(`You win! ${playerSelection} beats ${computerSelection}.`);
         } else {
-            return(`You lose! ${playerSelection} loses against ${computerSelection}`);
+            return(`You lose! ${playerSelection} loses against ${computerSelection}.`);
         }
     }
     else if (playerSelection.toLowerCase() === "scissors") {
         if (computerSelection === "paper") {
-            return(`You win! ${playerSelection} beats ${computerSelection}`);
+            return(`You win! ${playerSelection} beats ${computerSelection}.`);
         } else {
-            return(`You lose! ${playerSelection} loses against ${computerSelection}`);
+            return(`You lose! ${playerSelection} loses against ${computerSelection}.`);
         }
     }
     else if (playerSelection.toLowerCase() === "paper") {
         if (computerSelection === "rock") {
-            return(`You win! ${playerSelection} beats ${computerSelection}`);
+            return(`You win! ${playerSelection} beats ${computerSelection}.`);
         } else {
-            return(`You lose! ${playerSelection} loses against ${computerSelection}`);
+            return(`You lose! ${playerSelection} loses against ${computerSelection}.`);
         }
     }
 }
 
-console.log(playRockPaperScissors("rock", computerPlay()))
+let playerSelection = window.prompt("Rock, paper or scissors?");
 
 let round = 0;
 let playerPoints = 0;
