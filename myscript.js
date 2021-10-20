@@ -32,3 +32,18 @@ function playRockPaperScissors(playerSelection, computerSelection) {
 }
 
 console.log(playRockPaperScissors("rock", computerPlay()))
+
+round = 0
+playerPoints = 0
+computerPoints = 0
+while (round < 5) {
+    function game() {
+        if (playRockPaperScissors().includes("lose")) {
+
+            playerPoints += 1;
+            return;
+    
+        }
+    }
+    round += 1
+}
