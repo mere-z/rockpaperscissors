@@ -6,7 +6,7 @@ function computerPlay() {
 
 function playRockPaperScissors(playerSelection, computerSelection) {
     if (playerSelection.toLowerCase() === computerSelection) {
-        return("You tie!");
+        return(`You tie! You both chose ${playerSelection}`);
     }
     else if (playerSelection.toLowerCase() === "rock") {
         if (computerSelection === "scissors") {
