@@ -69,4 +69,4 @@ else {
     result = "Player ties with the computer!"
 }
 
-console.log(result)
+console.log(result);
