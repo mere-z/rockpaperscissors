@@ -37,22 +37,24 @@ let computerSelection = computerPlay();
 let round = 0;
 let playerPoints = 0;
 let computerPoints = 0;
-while (round < 5) {
-    function game() {
-        if (playRockPaperScissors(playerSelection, computerSelection).includes("lose")) {
+function game() {
+    console.log(playRockPaperScissors(playerSelection, computerSelection));
+    if (playRockPaperScissors(playerSelection, computerSelection).includes("lose")) {
 
-            computerPoints += 1;
-            return;
-        }
-        else if (playRockPaperScissors(playerSelection, computerSelection).includes("win")) {
-            playerPoints += 1;
-            return;
-        }
-        else {
-            return;
-        }
+        computerPoints += 1;
+        return;
     }
-    round += 1
+    else if (playRockPaperScissors(playerSelection, computerSelection).includes("win")) {
+        playerPoints += 1;
+        return;
+    }
+    else {
+        return;
+    }
+}
+while (round < 5) {
+    game()
+    round += 1;
 }
 
 let result;
