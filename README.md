@@ -11,3 +11,5 @@ choose your weapon for 5 rounds!
 right click, then click 'inspect' and head to the 'console'. 
 
 if you cannot see the results of your rps battle, ensure that 'user messages' are visible in console
+
+if you still cannot see the results or find a bug, plsletmeknowthankyouverymuch
