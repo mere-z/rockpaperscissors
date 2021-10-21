@@ -39,7 +39,7 @@ let playerPoints = 0;
 let computerPoints = 0;
 function game() {
     computerSelection = computerPlay();
-    playerSelection = window.prompt("Rock, paper or scissors? (no seriously the only valid inputs are 'rock' or 'paper' or 'scissors')");
+    playerSelection = window.prompt("Rock, paper or scissors? \n (no seriously the only valid inputs are 'rock' or 'paper' or 'scissors')");
 
     let inputValidation = playerSelection.toLowerCase() === "rock" || 
     playerSelection.toLowerCase() === "scissors" || 
