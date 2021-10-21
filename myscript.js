@@ -83,5 +83,15 @@ else {
 }
 
 console.log(result);
-console.log(`Player ended up with ${playerPoints} wins!`);
-console.log(`Computer ended up with ${computerPoints} wins!`)
+
+if (playerPoints == 1) {
+    console.log(`Player ended up with ${playerPoints} win!`);
+} else {
+    console.log(`Player ended up with ${playerPoints} wins!`);
+}
+
+if (computerPoints == 1) {
+    console.log(`Computer ended up with ${computerPoints} win!`)
+} else {
+    console.log(`Computer ended up with ${computerPoints} wins!`)
+}
