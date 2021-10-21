@@ -39,14 +39,14 @@ let playerPoints = 0;
 let computerPoints = 0;
 function game() {
     computerSelection = computerPlay();
-    playerSelection = window.prompt("Rock, paper or scissors?");
+    playerSelection = window.prompt("Rock, paper or scissors? (no seriously the only valid inputs are 'rock', 'paper' or 'scissors')");
 
     let inputValidation = playerSelection.toLowerCase() === "rock" || 
     playerSelection.toLowerCase() === "scissors" || 
     playerSelection.toLowerCase() === "paper" || "invalid";
 
     if (inputValidation === "invalid") {
-        console.log("You have entered an invalid input. You will forfeit this round.")
+        console.log(`You have entered ${playerSelection}, which is an invalid input. You will forfeit this round.`)
         computerPoints += 1;
         return;
     }
